@@ -20,7 +20,7 @@ AToM v4.0.0
  - `conda install -c conda-forge cudatoolkit=11.7.0` [`11.7.0` may need to be adjusted according to your GPU device compatibility]
  - `conda install -c conda-forge openmm-atmmetaforce-plugin`
  - `conda install -c conda-forge configobj setproctitle r-base`
- - `git clone https://github.com/smutao/-fork-AToM-full/tree/v4.0.0rc-r1; cd v4.0.0rc-r1`
+ - `git clone https://github.com/molcube-public/afes-openmm-atom-1/tree/v4.0.0rc-r1; cd v4.0.0rc-r1`
  - `python setup.py install`
  - `Rscript -e 'install.packages("UWHAM", repos = "http://cran.us.r-project.org")' `
 
