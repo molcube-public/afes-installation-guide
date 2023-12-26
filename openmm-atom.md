@@ -26,4 +26,13 @@ AToM v4.0.0
  - `Rscript -e 'install.packages("UWHAM", repos = "http://cran.us.r-project.org")' `
 
 AToM v8.1
-- 
+-
+
+- `conda create --name atom-v810-dev`
+- `conda activate atom-v810-dev`
+- `conda install -c conda-forge openmmforcefields`
+- `conda install -c conda-forge openmm=8.1.0`
+- `conda install -c conda-forge cudatoolkit=11.7.0` 
+- `conda install -c conda-forge ambertools=23.3`
+- `conda install -c conda-forge configobj setproctitle r-base`
+- ... to be filled 
