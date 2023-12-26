@@ -15,7 +15,7 @@ AToM v4.0.0
 - 
 
  - `conda create --name atom-v400-1` [to create a new conda environment. `atom-v400-1` can be any name you like]
- - `conda env activate atom-v400-1`
+ - `conda activate atom-v400-1`
  - `conda install -c conda-forge openmmforcefields`
  - `conda install -c conda-forge ambertools=23.3`
  - `conda install -c conda-forge cudatoolkit=11.7.0` [`11.7.0` may need to be adjusted according to your GPU device compatibility]
