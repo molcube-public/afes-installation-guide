@@ -28,3 +28,23 @@ II. Compile standalone BLaDE program
 After compilation, the `blade` executable is installed to `afes-blade-1/build` folder. 
 
 Remember to set `OMP_NUM_THREADS` (as 1) and `CUDA_VISIBLE_DEVICES` environment variables.
+
+III. Install pyALF to conda environment 
+-
+
+- `cd afes-pyalf-1`
+- ``` export ALF_SOURCE_DIR=`pwd` ```
+- `cd $ALF_SOURCE_DIR/alf/wham`
+- `bash Clean.sh`
+- `cmake ./`
+- `make wham`
+- `cd $ALF_SOURCE_DIR/alf/dca`
+- `bash Clean.sh`
+- `cmake ./`
+- `make all`
+- `cd $ALF_SOURCE_DIR`
+- `pip install -e .`
+- `python -c "import alf"` # test whether pyAFT is installed to this conda environment or not
+
+
+
