@@ -1,5 +1,30 @@
 standalone BLaDE program and pyALF library
 ==
 
+There are three major steps. 
+
+Most steps are taken according to MSLD workshop. https://github.com/BrooksResearchGroup-UM/MSLD-Workshop/tree/main/0Install_Tools/Linux
 
 
+I. Setting up environment
+-
+
+- create a new folder
+- `git clone https://github.com/molcube-public/afes-blade-1.git`
+- `git clone https://github.com/molcube-public/afes-pyalf-1.git`
+- `conda create -n bld-w-alf-test1 python=3.9` # create a new conda environment, here we use name `bld-w-alf-test1`
+- `conda activate bld-w-alf-test1`
+- `conda install -c conda-forge mamba`
+- `conda install -c "nvidia/label/cuda-11.6.2" cuda` 
+- `mamba install -y -c conda-forge gcc==11.4 gxx==11.4 gfortran==11.4 make cmake binutils fftw openmpi  mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas   biopython  mdtraj  jsonpickle` # run this line twice if error is encountered
+
+II. Compile standalone BLaDE program
+-
+
+- `cd afes-blade-1`
+- comment out 'source module' in Compile.sh
+- `bash Compiled.sh` 
+
+After compilation, the `blade` executable is installed to `afes-blade-1/build` folder. 
+
+Remember to set `OMP_NUM_THREADS` (as 1) and `CUDA_VISIBLE_DEVICES` environment variables.
