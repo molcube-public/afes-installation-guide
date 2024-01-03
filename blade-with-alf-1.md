@@ -6,7 +6,7 @@ There are three major steps.
 Most steps are taken according to MSLD workshop. https://github.com/BrooksResearchGroup-UM/MSLD-Workshop/tree/main/0Install_Tools/Linux
 
 
-I. Setting up environment
+I. Set up environment
 -
 
 - create a new folder
