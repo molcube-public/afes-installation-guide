@@ -15,8 +15,8 @@ I. Set up environment
 - `conda create -n bld-w-alf-test1 python=3.9` # create a new conda environment, here we use name `bld-w-alf-test1`
 - `conda activate bld-w-alf-test1`
 - `conda install -c conda-forge mamba`
-- `conda install -c "nvidia/label/cuda-11.6.2" cuda` 
-- `mamba install -y -c conda-forge gcc==11.4 gxx==11.4 gfortran==11.4 make cmake binutils fftw openmpi  mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas   biopython  mdtraj  jsonpickle` # run this line twice if error is encountered
+- `conda install -c "nvidia/label/cuda-11.6.2" cuda` # For newer cards (e.g. L4 tensor card), use newer CUDA version (e.g. 12.1.0).
+- `mamba install -y -c conda-forge gcc==11.4 gxx==11.4 gfortran==11.4 make cmake binutils fftw openmpi  mpi4py sysroot_linux-64==2.17 readline==8.2 rdkit openbabel pandas   biopython  mdtraj  jsonpickle` # run this line twice if error is encountered. Use gcc==12.2 if CUDA version is 12.1.x.
 
 II. Compile standalone BLaDE program
 -
